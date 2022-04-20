@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(52, 50, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 75%;
+  height: 500px;
+  box-shadow: 2px 2px 10px rgb(196, 191, 191);
+  background: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+div .fromDiv,
+div .toDiv {
+  width: 49%;
+  height: 80%;
+  background: transparent;
+  display: inline-block;
+  border: none;
+}
+
+div textarea {
+  width: 100%;
+  height: 90%;
+  outline: none;
+  background: transparent;
+  display: inline-block;
+  border: none;
+  text-align: start;
+  resize: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#line {
+  width: 1%;
+  height: 50%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  border-left: 2px solid rgb(51, 50, 50);
+}
+
+.toDiv {
+  float: right;
+}
+
+#extra {
+  width: 100%;
+  height: 10%;
+  transform: translateY(-4.5px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+i {
+  cursor: pointer;
+  font-size: 18px;
+  color: rgb(53, 50, 50);
+}
+
+.fromDiv #extra select,
+.toDiv #extra select {
+  font-size: 16px;
+  cursor: pointer;
+  width: 90px;
+  outline: none;
+  border: none;
+}
+
+button {
+  width: 100%;
+  outline: none;
+  height: 10%;
+  border: none;
+  background: royalblue;
+  color: white;
+  border-radius: 2px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px royalblue;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  div .fromDiv,
+  div .toDiv {
+    width: 100%;
+    height: 45%;
+  }
+
+  div textarea {
+    width: 100%;
+    height: 75%;
+    font-size: 18px;
+  }
+
+  #extra {
+    height: 10%;
+  }
+
+  #line {
+    width: 40%;
+    position: absolute;
+    top: 44.8%;
+    left: 30%;
+    border: none;
+    border-top: 2px solid gray;
+  }
+}
