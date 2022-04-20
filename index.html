@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="fromDiv">
+        <textarea
+          id="from"
+          placeholder="Enter text to translate"
+          value=""
+        ></textarea>
+        <div id="extra">
+          <i class="fa-solid fa-volume-high" id="fromSound"></i>
+          <i class="fa-solid fa-copy" id="fromCopy"></i>
+          <select id="fromLanguages">
+            <option value="en-US">English</option>
+            <option value="ar-EG">Arabic</option>
+            <option value="de-DE">German</option>
+            <option value="fr-FR">French</option>
+            <option value="it-IT">Italian</option>
+            <option value="ja-JP">Japanese</option>
+            <option value="zh-CN">Chinese</option>
+            <option value="es-ES">Spanish</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="line"></div>
+      <div class="toDiv">
+        <textarea id="to" placeholder="Translation" value=""></textarea>
+        <div id="extra">
+          <i class="fa-solid fa-volume-high" id="toSound"></i>
+          <i class="fa-solid fa-copy" id="toCopy"></i>
+          <select id="toLanguages">
+            <option value="ar-EG">Arabic</option>
+            <option value="en-US">English</option>
+            <option value="de-DE">German</option>
+            <option value="fr-FR">French</option>
+            <option value="it-IT">Italian</option>
+            <option value="ja-JP">Japanese</option>
+            <option value="zh-CN">Chinese</option>
+            <option value="es-ES">Spanish</option>
+          </select>
+        </div>
+      </div>
+
+      <button>Translate</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
